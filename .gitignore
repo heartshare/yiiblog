@@ -1,5 +1,11 @@
-!/assets/
-/assets/*
+*.swp
+.buildpath
+.project
+.settings
+assets/*
+protected/runtime/*
+protected/data/*.db
+protected/tests/report/*
 /nbproject/private/
 /nbproject/
 /.settings/
