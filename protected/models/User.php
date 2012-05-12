@@ -100,4 +100,23 @@ class User extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
+	/**
+	 *Validate password and return true or false
+	 * @param string $password the password compare with database
+	 * @return  boolean
+	 */
+	public function validatePassword($password) {
+		return $this->hashPassword($password, $this->salt)===$this->password;
+	}
+	
+	/**
+	 *MD5 encrypt password with salt
+	 * @param string $password  the password compare with database
+	 * @param string $salt the salt string to md5 the password
+	 * @return the md5 password
+	 */
+	public function hashPassword($password,$salt) {
+		return md5($salt.$password);
+	}
 }
