@@ -2,8 +2,6 @@
 .buildpath
 .project
 .settings
-!/assets/
-assets/*
 protected/runtime/*
 protected/data/*.db
 protected/tests/report/*
