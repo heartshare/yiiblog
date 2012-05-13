@@ -16,6 +16,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.extensions.yii-debug-toolbar.*',
 	),
 
 	'modules'=>array(
@@ -60,7 +61,9 @@ return array(
 			'username' => 'yiiblog',
 			'password' => 'yiiblog',
 			'charset' => 'utf8',
-			'tablePrefix' => 'tbl_'      			
+			'tablePrefix' => 'tbl_',  
+			'enableProfiling'=>true,
+			'enableParamLogging'=>true,
 		),
 		
 		'errorHandler'=>array(
@@ -79,8 +82,13 @@ return array(
 				
 				array(
 					'class'=>'CWebLogRoute',
+					'levels'=>'error, warning, trace',
 				),
-				
+				array(
+					'class'=>'ext.yii-debug-toolbar.YiiDebugToolbarRoute',
+					// Access is restricted by default to the localhost
+					'ipFilters'=>array('127.0.0.1','192.168.1.*'),
+				),			
 			),
 		),
 	),

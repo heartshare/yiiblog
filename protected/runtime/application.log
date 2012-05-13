@@ -65,3 +65,263 @@ REQUEST_URI=/yiiblog/index.php/gii/model
 ---
 2012/05/12 16:35:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yiiblog.user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `user`.
 in D:\Google Drive\yiiblog\index.php (13)
+2012/05/12 18:47:58 [error] [exception.CException] exception 'CException' with message 'Property "CStatRelation.conditon" is not defined.' in D:\Google Drive\yiiblog\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(1932): CComponent->__set('conditon', 'status2')
+#1 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(2310): CBaseActiveRelation->__construct('commentCount', 'Comment', 'post_id', Array)
+#2 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(2291): CActiveRecordMetaData->addRelation('commentCount', Array)
+#3 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#4 D:\Google Drive\yiiblog\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#5 D:\Google Drive\yiiblog\protected\controllers\PostController.php(130): CActiveDataProvider->__construct('Post')
+#6 D:\Google Drive\yiiblog\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#7 D:\Google Drive\yiiblog\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 D:\Google Drive\yiiblog\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 D:\Google Drive\yiiblog\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 D:\Google Drive\yiiblog\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\Google Drive\yiiblog\framework\web\CController.php(292): CFilterChain->run()
+#14 D:\Google Drive\yiiblog\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(276): CController->run('')
+#16 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(135): CWebApplication->runController('post')
+#17 D:\Google Drive\yiiblog\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\Google Drive\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php/post
+---
+2012/05/12 18:49:42 [error] [exception.CException] exception 'CException' with message 'Property "CStatRelation.conditon" is not defined.' in D:\Google Drive\yiiblog\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(1932): CComponent->__set('conditon', 'status2')
+#1 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(2310): CBaseActiveRelation->__construct('commentCount', 'Comment', 'post_id', Array)
+#2 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(2291): CActiveRecordMetaData->addRelation('commentCount', Array)
+#3 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#4 D:\Google Drive\yiiblog\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#5 D:\Google Drive\yiiblog\protected\controllers\PostController.php(130): CActiveDataProvider->__construct('Post')
+#6 D:\Google Drive\yiiblog\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#7 D:\Google Drive\yiiblog\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 D:\Google Drive\yiiblog\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 D:\Google Drive\yiiblog\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 D:\Google Drive\yiiblog\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\Google Drive\yiiblog\framework\web\CController.php(292): CFilterChain->run()
+#14 D:\Google Drive\yiiblog\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(276): CController->run('')
+#16 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(135): CWebApplication->runController('post')
+#17 D:\Google Drive\yiiblog\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\Google Drive\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php/post
+---
+2012/05/12 18:50:23 [error] [exception.CException] exception 'CException' with message 'Property "CStatRelation.conditon" is not defined.' in D:\Google Drive\yiiblog\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(1932): CComponent->__set('conditon', 'status2')
+#1 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(2310): CBaseActiveRelation->__construct('commentCount', 'Comment', 'post_id', Array)
+#2 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(2291): CActiveRecordMetaData->addRelation('commentCount', Array)
+#3 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#4 D:\Google Drive\yiiblog\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#5 D:\Google Drive\yiiblog\protected\controllers\PostController.php(130): CActiveDataProvider->__construct('Post')
+#6 D:\Google Drive\yiiblog\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#7 D:\Google Drive\yiiblog\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 D:\Google Drive\yiiblog\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 D:\Google Drive\yiiblog\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 D:\Google Drive\yiiblog\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\Google Drive\yiiblog\framework\web\CController.php(292): CFilterChain->run()
+#14 D:\Google Drive\yiiblog\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(276): CController->run('')
+#16 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(135): CWebApplication->runController('post')
+#17 D:\Google Drive\yiiblog\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\Google Drive\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php/post
+---
+2012/05/12 18:51:12 [error] [exception.CException] exception 'CException' with message 'Property "CStatRelation.conditon" is not defined.' in D:\Google Drive\yiiblog\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(1932): CComponent->__set('conditon', 'status=2')
+#1 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(2310): CBaseActiveRelation->__construct('commentCount', 'Comment', 'post_id', Array)
+#2 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(2291): CActiveRecordMetaData->addRelation('commentCount', Array)
+#3 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#4 D:\Google Drive\yiiblog\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#5 D:\Google Drive\yiiblog\protected\controllers\PostController.php(130): CActiveDataProvider->__construct('Post')
+#6 D:\Google Drive\yiiblog\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#7 D:\Google Drive\yiiblog\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 D:\Google Drive\yiiblog\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 D:\Google Drive\yiiblog\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 D:\Google Drive\yiiblog\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\Google Drive\yiiblog\framework\web\CController.php(292): CFilterChain->run()
+#14 D:\Google Drive\yiiblog\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(276): CController->run('')
+#16 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(135): CWebApplication->runController('post')
+#17 D:\Google Drive\yiiblog\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\Google Drive\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php/post
+---
+2012/05/12 18:51:59 [error] [exception.CException] exception 'CException' with message 'Property "CStatRelation.conditon" is not defined.' in D:\Google Drive\yiiblog\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(1932): CComponent->__set('conditon', 'status=2')
+#1 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(2310): CBaseActiveRelation->__construct('commentCount', 'Comment', 'post_id', Array)
+#2 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(2291): CActiveRecordMetaData->addRelation('commentCount', Array)
+#3 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#4 D:\Google Drive\yiiblog\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#5 D:\Google Drive\yiiblog\protected\controllers\PostController.php(130): CActiveDataProvider->__construct('Post')
+#6 D:\Google Drive\yiiblog\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#7 D:\Google Drive\yiiblog\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 D:\Google Drive\yiiblog\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 D:\Google Drive\yiiblog\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 D:\Google Drive\yiiblog\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\Google Drive\yiiblog\framework\web\CController.php(292): CFilterChain->run()
+#14 D:\Google Drive\yiiblog\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(276): CController->run('')
+#16 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(135): CWebApplication->runController('post')
+#17 D:\Google Drive\yiiblog\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\Google Drive\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php/post
+---
+2012/05/12 18:52:04 [error] [exception.CException] exception 'CException' with message 'Property "CStatRelation.conditon" is not defined.' in D:\Google Drive\yiiblog\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(1932): CComponent->__set('conditon', 'status=2')
+#1 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(2310): CBaseActiveRelation->__construct('commentCount', 'Comment', 'post_id', Array)
+#2 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(2291): CActiveRecordMetaData->addRelation('commentCount', Array)
+#3 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#4 D:\Google Drive\yiiblog\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#5 D:\Google Drive\yiiblog\protected\controllers\PostController.php(130): CActiveDataProvider->__construct('Post')
+#6 D:\Google Drive\yiiblog\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#7 D:\Google Drive\yiiblog\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 D:\Google Drive\yiiblog\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 D:\Google Drive\yiiblog\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 D:\Google Drive\yiiblog\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\Google Drive\yiiblog\framework\web\CController.php(292): CFilterChain->run()
+#14 D:\Google Drive\yiiblog\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(276): CController->run('')
+#16 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(135): CWebApplication->runController('post')
+#17 D:\Google Drive\yiiblog\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\Google Drive\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php/post
+---
+2012/05/12 18:52:05 [error] [exception.CException] exception 'CException' with message 'Property "CStatRelation.conditon" is not defined.' in D:\Google Drive\yiiblog\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(1932): CComponent->__set('conditon', 'status=2')
+#1 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(2310): CBaseActiveRelation->__construct('commentCount', 'Comment', 'post_id', Array)
+#2 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(2291): CActiveRecordMetaData->addRelation('commentCount', Array)
+#3 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#4 D:\Google Drive\yiiblog\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#5 D:\Google Drive\yiiblog\protected\controllers\PostController.php(130): CActiveDataProvider->__construct('Post')
+#6 D:\Google Drive\yiiblog\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#7 D:\Google Drive\yiiblog\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 D:\Google Drive\yiiblog\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 D:\Google Drive\yiiblog\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 D:\Google Drive\yiiblog\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\Google Drive\yiiblog\framework\web\CController.php(292): CFilterChain->run()
+#14 D:\Google Drive\yiiblog\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(276): CController->run('')
+#16 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(135): CWebApplication->runController('post')
+#17 D:\Google Drive\yiiblog\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\Google Drive\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php/post
+---
+2012/05/12 18:52:29 [error] [exception.CException] exception 'CException' with message 'Property "CStatRelation.conditon" is not defined.' in D:\Google Drive\yiiblog\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(1932): CComponent->__set('conditon', 'status=2')
+#1 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(2310): CBaseActiveRelation->__construct('commentCount', 'Comment', 'post_id', Array)
+#2 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(2291): CActiveRecordMetaData->addRelation('commentCount', Array)
+#3 D:\Google Drive\yiiblog\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Post))
+#4 D:\Google Drive\yiiblog\framework\web\CActiveDataProvider.php(75): CActiveRecord::model('Post')
+#5 D:\Google Drive\yiiblog\protected\controllers\PostController.php(130): CActiveDataProvider->__construct('Post')
+#6 D:\Google Drive\yiiblog\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#7 D:\Google Drive\yiiblog\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 D:\Google Drive\yiiblog\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 D:\Google Drive\yiiblog\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 D:\Google Drive\yiiblog\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\Google Drive\yiiblog\framework\web\CController.php(292): CFilterChain->run()
+#14 D:\Google Drive\yiiblog\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(276): CController->run('')
+#16 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(135): CWebApplication->runController('post')
+#17 D:\Google Drive\yiiblog\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\Google Drive\yiiblog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yiiblog/index.php/post
+---
+2012/05/12 18:54:27 [error] [php] Undefined variable: post (D:\Google Drive\yiiblog\protected\views\post\view.php:16)
+Stack trace:
+#0 D:\Google Drive\yiiblog\framework\web\CController.php(870): PostController->renderFile()
+#1 D:\Google Drive\yiiblog\framework\web\CController.php(783): PostController->renderPartial()
+#2 D:\Google Drive\yiiblog\protected\controllers\PostController.php(55): PostController->render()
+#3 unknown(0): PostController->actionView()
+#4 D:\Google Drive\yiiblog\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#5 D:\Google Drive\yiiblog\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 D:\Google Drive\yiiblog\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#8 D:\Google Drive\yiiblog\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\Google Drive\yiiblog\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#10 D:\Google Drive\yiiblog\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#11 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 D:\Google Drive\yiiblog\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\Google Drive\yiiblog\framework\web\CController.php(266): PostController->runActionWithFilters()
+#14 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(276): PostController->run()
+#15 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#16 D:\Google Drive\yiiblog\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\Google Drive\yiiblog\index.php(13): CWebApplication->run()
+REQUEST_URI=/yiiblog/index.php/post/1
+in D:\Google Drive\yiiblog\protected\views\post\view.php (16)
+in D:\Google Drive\yiiblog\protected\controllers\PostController.php (55)
+in D:\Google Drive\yiiblog\index.php (13)
+2012/05/13 00:24:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\Google Drive\yiiblog\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\Google Drive\yiiblog\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\Google Drive\yiiblog\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\Google Drive\yiiblog\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\Google Drive\yiiblog\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\Google Drive\yiiblog\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\Google Drive\yiiblog\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(135): CWebApplication->runController('post/admin')
+#9 D:\Google Drive\yiiblog\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Google Drive\yiiblog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiiblog/index.php/post/admin
+HTTP_REFERER=http://localhost/yiiblog/index.php/site/login
+---
+2012/05/13 00:27:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\Google Drive\yiiblog\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\Google Drive\yiiblog\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\Google Drive\yiiblog\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\Google Drive\yiiblog\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\Google Drive\yiiblog\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\Google Drive\yiiblog\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\Google Drive\yiiblog\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\Google Drive\yiiblog\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(135): CWebApplication->runController('post/admin')
+#9 D:\Google Drive\yiiblog\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\Google Drive\yiiblog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiiblog/index.php/post/admin
+HTTP_REFERER=http://localhost/yiiblog/index.php/post/1
+---
+2012/05/13 00:39:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "post".' in D:\Google Drive\yiiblog\framework\web\CController.php:484
+Stack trace:
+#0 D:\Google Drive\yiiblog\framework\web\CController.php(271): CController->missingAction('post')
+#1 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(276): CController->run('post')
+#2 D:\Google Drive\yiiblog\framework\web\CWebApplication.php(135): CWebApplication->runController('site/post')
+#3 D:\Google Drive\yiiblog\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\Google Drive\yiiblog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiiblog/index.php/site/post
+---

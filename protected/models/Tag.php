@@ -87,4 +87,22 @@ class Tag extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
+	/**
+	 * split the $tags string with command to array
+	 * @param string $tags
+	 * @return string 
+	 */
+	public function string2array($tags) {
+		return preg_split('/\s*,\s*/',trim($tags),-1,PREG_SPLIT_NO_EMPTY);
+	}
+	
+	/**
+	 * Seperate the tag array to string by comma
+	 * @param string $tags
+	 * @return the tags one by one
+	 */
+	public function array2string($tags) {
+		return implode(',', $tags);
+	}
 }

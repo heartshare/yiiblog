@@ -13,6 +13,8 @@ $this->menu=array(
 );
 ?>
 
+<?php var_dump(Lookup::item('PostStatus', Post::STATUS_PUBLISHED));?>
+
 <h1>View Post #<?php echo $model->id; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
